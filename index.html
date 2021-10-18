@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <title>My portfolio</title>
+</head>
+<body class="main-body">
+    <div class="containerNav">
+        <div class="picture-header">
+            <a href="index.html">
+            <img class="picture-header" src="./styles/logo.png"></a>
+        </div>
+        <div class="nav-bar">
+        <nav>
+            <a href="#mainsection">About</a>
+            <a href="#projectsection">Projects</a>
+            <a href="#contactsection">Contact</a>
+        </nav>
+        </div>
+    </div>
+    <div id="mainsection" class='main-section'>
+        <div class='main-container'>
+          <h1>Hello, I'm Amir Suljkanović.<br> I'm a web developer.</h1>
+          <p>I have 1 year experience at HTML, CSS and Javascript. <br>
+            I value honesty and integrity above all else. These ideals <br> guide my approach to problem solving and life in general. </p>
+        </div>
+    </div>
+    <div id="projectsection" class="project-section">
+        <div class="title2"><h1>My projects.</h1></div>
+        <div class="project-container">
+            <div class="project">
+                <a target="_blank"  href="https://weather.com/">
+                <img class="img" src="./styles/project-photos/weather.jpg"></a>
+                <div class="text">CS50 - Weather app project</div>
+            </div>
+            <div class="project">
+                <a target="_blank" href="#">
+                <img class="img" src="./styles/project-photos/landing.png"></a>
+                <div class="text">The Odin Project - Landing page</div>
+            </div>
+            <div class="project">
+                <a target="_blank" href="#">
+                <img class="img" src="./styles/project-photos/finance.jpg"></a>
+                <div class="text">CS50 - Finance project</div>
+            </div>
+        </div>
+    </div>
+    <div id="contactsection" class="contact-section">
+        <h1 class="form-title">Contact Me</h1>
+        <div class="contact-container">
+            <div class="form-container">
+               <form class="contact-form">
+                    <div class="contact-input validate-input" data-validate="Please enter your name">
+					    <input class="input100" type="text" name="name" placeholder="Full Name">
+					    <span class="focus-input"></span>
+				    </div>
+                    <div class="contact-input validate-input" data-validate= "Please enter your email: e@a.x">
+					    <input class="input100" type="text" name="email" placeholder="E-mail">
+					    <span class="focus-input"></span>
+				    </div>
+                    <div class="contact-input validate-input" data-validate="Please enter your message">
+					    <textarea class="input100" type="text" name="message" placeholder="Your message"></textarea>
+					    <span class="focus-input"></span>
+				    </div>  
+                    
+                    <div class="container-btn">
+                        <button class="form-btn">
+                            <span>
+                                <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+                                Send
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,414 @@
+@font-face {
+    font-family:'Pitchsans-Semibold';
+    src: url('./fonts/PitchSans-Semibold.ttf');
+}
+@font-face {
+    font-family: 'Superior Title Black Regular';
+    src: url('./fonts/Superior Title Black Regular.ttf')
+}
+@font-face {
+    font-family: 'GT Walsheim Pro Bold Regular';
+    src: url('./fonts/GT Walsheim Pro Bold Regular.ttf')
+}
+@font-face {
+    font-family: 'GTWalsheimPro-Light';
+    src: url('./fonts/GTWalsheimPro-Light.ttf')
+}
+
+
+
+
+
+body {
+    display: grid;
+    margin: 0;
+    background-image: url("./background.jpg");
+}
+
+.containerNav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.containerNav nav {
+    display: flex;
+    gap: 40px;
+    padding-right: 55px;
+}
+
+.picture-header {
+    display: flex;
+    padding-top: 35px;
+}
+.picture-header img {
+    height: 200px;
+    width: 200px;
+    
+}
+
+
+
+.containerNav nav a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Pitchsans-Semibold', sans-serif;
+}
+
+.main-section
+{
+    box-sizing: border-box;
+    height: 700px;
+}
+.project-section,
+.contact-section {
+    height: 800px;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    height: 99%;
+    width: 70%;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: solid;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+}
+.main-container h1 {
+    font-family: 'GT Walsheim Pro Bold Regular';
+    font-size: 66px;
+    line-height: 88px;
+    padding-left: 70px;
+    padding-bottom: 50px;
+    margin-top: 0%;
+}
+
+.main-container p {
+    font-size: 28px;
+    margin-top: 0px;
+    padding-left: 73px;
+    line-height: 40px;
+    font-family: 'GTWalsheimPro-Light';
+}
+
+.img {
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.title2 {
+    text-align: center;
+    font-family: 'GT Walsheim Pro Bold Regular';
+}
+.title2 h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.project-container {
+    display: flex;
+    height: 85%;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid;
+    gap: 40px;
+}
+
+.text {
+    font-size: 22px;
+    font-family: 'GTWalsheimPro-Light';
+    width: 200px;
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.img2 {
+    height: 150px;
+    width: 150px;
+}
+
+
+.form-container {
+        width: 400px;  
+        min-height: 550px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;      
+        padding: 15px;
+        padding-right: 20px;
+      
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    width: 100%;
+    padding-right: 20px;
+  }
+
+.form-title {
+    display: block;
+    font-family: 'GT Walsheim Pro Bold Regular';
+    font-size: 45px;
+    color: #000000;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 49px;
+    margin-top: 30px;
+  }
+
+.contact-input {
+    width: 100%;
+    border-radius: 31px;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .input100 {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-radius: 31px;
+    font-family: "GTWalsheimPro-Light";
+    font-size: 18px;
+    color: #8f8fa1;
+    line-height: 1.2;
+  }
+
+  input.input100 {
+    height: 62px;
+    padding-left: 20px;
+  }
+  
+  
+textarea.input100 {
+    min-height: 169px;
+    padding: 20px 0 0 20px;
+  }
+
+  .focus-input {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 31px;
+    background-color: #fff;
+    pointer-events: none;
+    
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .input:focus + .focus-input{
+    width: calc(100% + 20px);
+  }
+  
+/*BUTTON */
+  .container-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+
+.form-btn {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        min-width: 150px;
+        height: 62px;
+        background-color: transparent;
+        border-radius: 31px;
+      
+        font-family: 'GT Walsheim Pro Bold Regular';
+        font-size: 16px;
+        color: #fff;
+        line-height: 1.2;
+        text-transform: uppercase;
+      
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+        position: relative;
+        z-index: 1;
+  }
+
+  .form-btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 31px;
+    background-color: #827ffe;
+    pointer-events: none;
+    
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .form-btn:hover:before {
+    background-color: #403866;
+    width: calc(100% + 20px);
+  }
+  
+
+  .alert-validate::before {
+    content: attr(data-validate);
+    position: absolute;
+    z-index: 1000;
+    max-width: 70%;
+    background-color: #fff;
+    border: 1px solid #c80000;
+    border-radius: 14px;
+    padding: 4px 25px 4px 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 10px;
+    pointer-events: none;
+  
+    font-family: 'GT Walsheim Pro Bold Regular';
+    color: #c80000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+  
+    visibility: hidden;
+    opacity: 0;
+  
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+  }
+  
+  .alert-validate::after {
+    content: "\f06a";
+    font-family: 'GT Walsheim Pro Bold Regular';
+    display: block;
+    position: absolute;
+    z-index: 1100;
+    color: #c80000;
+    font-size: 16px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 16px;
+  }
+  
+  .alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  @media (max-width: 992px) {
+    .alert-validate::before {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  textarea {
+    outline: none;
+    border: none;
+  }
+  
+  textarea:focus, input:focus {
+    border-color: transparent !important;
+  }
+
+  input {
+    outline: none;
+    border: none;
+  }
+  
+  input[type="number"] {
+      -moz-appearance: textfield;
+      appearance: none;
+      -webkit-appearance: none;
+  }
+  
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+  }
+
+  button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  iframe {
+    border: none !important;
+  }
+
+.m-r-6 {
+    margin-right: 6px;
+}    
