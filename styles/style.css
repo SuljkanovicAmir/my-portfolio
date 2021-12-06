@@ -537,12 +537,13 @@ textarea.input100 {
 
 /* social below */
 .socicon {
-
+  width: 2rem;
+  height: 2rem;
 }
 .socials {
   right: 1.5%;
-  bottom: 82.5%;
-  gap: 28px;
+  bottom: 83.5%;
+  gap: 25px;
 }
 
 .scroll-up {
