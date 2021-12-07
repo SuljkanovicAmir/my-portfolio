@@ -582,7 +582,7 @@ textarea.input100 {
   bottom: 3%;
   gap: 20px;
   flex-direction: row;
-  position: absolute;
+  position: fixed;
 }
 
 .scroll-up {
@@ -624,7 +624,10 @@ nav ul.show {
   transform: translateX(0);
 }
 
-
+.footer {
+  display: flex;
+  justify-content: center;
+}
 
 
 } 
