@@ -14,7 +14,9 @@
     font-family: 'GTWalsheimPro-Light';
     src: url('./fonts/GTWalsheimPro-Light.ttf')
 }
-
+html {
+  overflow-x: hidden;
+}
 
 body {
     display: grid;
@@ -461,9 +463,10 @@ textarea.input100 {
 
 
 @media screen and (max-width: 720px) {
-  html {
+  body {
     overflow-x: hidden;
   }
+  
   .containerNav {
     justify-content: space-between;
     gap: 27px;
@@ -598,6 +601,7 @@ nav ul {
   transform: translateX(120%);
   transition: transform 0.5s ease-in;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -webkit-overflow-scrolling: touch;
   padding-left: 0;
   border-radius: 5px;
   gap: unset;
