@@ -463,9 +463,13 @@ textarea.input100 {
 
 
 @media screen and (max-width: 720px) {
-  body {
-    overflow-x: hidden;
+  html {
     height: 100%;
+  }
+  
+  .main-body {
+    overflow-x: hidden;
+    background-size: 1735px 2490px;
   }
   
   .containerNav {
