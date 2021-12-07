@@ -490,7 +490,7 @@ textarea.input100 {
   .main-container h1 {
     font-size: 44px;
     line-height: 50px;
-    padding-top: 10px;
+    padding-top: 15px;
   }
   .main-container p {
     padding-left: 0;
@@ -589,7 +589,7 @@ nav ul {
   position: fixed;
   background-color: var(--bg-color);
   flex-direction: column;
-  top: 39px;
+  top: 36px;
   left: 57%;
   width: 39%;
   text-align: center;
@@ -603,7 +603,7 @@ nav ul {
   padding-right: unset;
 }
  nav ul li {
-  margin: 8px;
+  margin: 6px;
 }
 .burger-menu {
   display: block;
