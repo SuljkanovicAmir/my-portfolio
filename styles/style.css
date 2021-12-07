@@ -469,7 +469,7 @@ textarea.input100 {
   
   .main-body {
     overflow-x: hidden;
-    background-size: 1735px 2490px;
+    background-size: 1735px 2550px;
   }
   
   .containerNav {
@@ -587,7 +587,7 @@ textarea.input100 {
   bottom: 3%;
   gap: 20px;
   flex-direction: row;
-  position: fixed;
+  position: sticky;
 }
 
 .scroll-up {
@@ -632,7 +632,7 @@ nav ul.show {
 .footer {
   display: flex;
   justify-content: center;
-  bottom: 0%;
+  bottom: 3%;
   position: sticky;
 }
 
