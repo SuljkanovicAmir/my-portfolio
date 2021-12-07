@@ -15,6 +15,7 @@
     src: url('./fonts/GTWalsheimPro-Light.ttf')
 }
 
+
 body {
     display: grid;
     margin: 0;
@@ -34,6 +35,15 @@ body {
     display: flex;
     gap: 40px;
     padding-right: 55px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  color: white;
+  font-size: 24px;
+  font-family: 'Pitchsans-Semibold', sans-serif;
 }
 
 .picture-header {
@@ -359,6 +369,19 @@ textarea.input100 {
     visibility: visible;
     opacity: 1;
   }
+
+  .burger-menu  {
+    display: none;
+    visibility: hidden;
+  }
+  
+
+
+
+
+
+
+
   
   @media (max-width: 992px) {
     .alert-validate::before {
@@ -440,13 +463,13 @@ textarea.input100 {
 @media screen and (max-width: 720px) {
   
   .containerNav {
-    justify-content: center;
+    justify-content: space-between;
     gap: 27px;
     margin-bottom: 50px;
   }
   .picture-header {
     padding-top: 18px;
-    padding-left: 0;
+    padding-left: 8px;
   }
   .picture-header img {
     width: 50px;
@@ -466,7 +489,8 @@ textarea.input100 {
   }
   .main-container h1 {
     font-size: 44px;
-    line-height: 56px;
+    line-height: 50px;
+    padding-top: 10px;
   }
   .main-container p {
     padding-left: 0;
@@ -497,6 +521,8 @@ textarea.input100 {
 
 
 
+
+
 /*contact section below */
 .contact-section {
   min-height: 700px;
@@ -513,9 +539,7 @@ textarea.input100 {
    display: flex;
    justify-content: center;
 }
-.form-container {
 
-}
 .contact-input {
   width: 200px;
 }
@@ -540,15 +564,61 @@ textarea.input100 {
   width: 2rem;
   height: 2rem;
 }
+.up-arrow {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 2px;
+  width: 2.2rem;
+  height: 2.2rem;
+}
 .socials {
-  right: 1.5%;
-  bottom: 83.5%;
-  gap: 25px;
+  right: unset;
+  justify-self: center;
+  bottom: 3%;
+  gap: 20px;
+  flex-direction: row;
 }
 
 .scroll-up {
-  right: 3%;
+  right: 4%;
 }
+
+
+nav ul {
+  list-style-type: none ;
+  position: fixed;
+  background-color: var(--bg-color);
+  flex-direction: column;
+  top: 39px;
+  left: 57%;
+  width: 39%;
+  text-align: center;
+  transform: translateX(120%);
+  transition: transform 0.5s ease-in;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding-left: 0;
+  border-radius: 5px;
+  gap: unset;
+  display: unset;
+  padding-right: unset;
+}
+ nav ul li {
+  margin: 8px;
+}
+.burger-menu {
+  display: block;
+  visibility: visible;
+}
+.burger-menu > img {
+  width: 50px;
+  height: 50px;
+}
+nav ul.show {
+  transform: translateX(0);
+}
+
+
+
 
 } 
 
