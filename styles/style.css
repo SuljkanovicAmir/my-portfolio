@@ -627,6 +627,7 @@ nav ul.show {
 .footer {
   display: flex;
   justify-content: center;
+  bottom: 0%;
 }
 
 
