@@ -21,9 +21,10 @@ html {
 body {
     display: grid;
     margin: 0;
-    background-image: url("./background1.jpg");
+    background-image: url("./background1.1.jpg");
     background-size: cover;
     backdrop-filter: contrast(0.5);
+
 }
 
 .containerNav {
@@ -469,7 +470,8 @@ textarea.input100 {
   
   .main-body {
     overflow-x: hidden;
-    background-size: 1735px 2550px;
+    background-image: url("/styles/backgroundmobile.jpg");
+    background-size: cover;
   }
   
   .containerNav {
