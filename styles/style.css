@@ -377,12 +377,25 @@ textarea.input100 {
   }
   
 
-
-
-
-
-
-
+  .bmc-btn-container {
+    display: flex;
+    position: sticky;
+    padding-bottom: 34px;
+    padding-left: 25px;
+  }
+  #coffee-btn {
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+  .bmc-btn {
+    min-width: 160px !important;
+    padding: 0px 10px !important;
+    font-size: 14px !important;
+    height: 55px !important;
+  }
+  .bmc-btn:hover {
+    background-color: #403866 !important;
+  }
   
   @media (max-width: 992px) {
     .alert-validate::before {
@@ -461,6 +474,10 @@ textarea.input100 {
 }
 
 
+/* Media content below */
+
+
+
 @media screen and (max-width: 720px) {
   html {
     height: 100%;
@@ -529,9 +546,7 @@ textarea.input100 {
     height: 150px;
   }
 
-
-
-
+  
 
 /*contact section below */
 .contact-section {
@@ -632,9 +647,29 @@ nav ul.show {
 
 .footer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   bottom: 3%;
   position: sticky;
+  gap: 40px;
+}
+
+.bmc-btn-container {
+  display: flex;
+  position: sticky;
+  padding-bottom: unset;
+  padding-left: unset;
+}
+#coffee-btn {
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.bmc-btn {
+  min-width: 120px !important;
+  padding: 0px 10px !important;
+  font-size: 12px !important;
+  height: 55px !important;
 }
 
 

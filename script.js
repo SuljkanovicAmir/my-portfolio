@@ -26,3 +26,4 @@ navLink.forEach((link) =>
     ul.classList.remove("show");
   })
 );
+
