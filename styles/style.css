@@ -23,8 +23,6 @@ body {
     margin: 0;
     background-image: url("./background1.1.jpg");
     background-size: cover;
-    backdrop-filter: contrast(0.5);
-
 }
 
 .containerNav {
@@ -453,7 +451,7 @@ textarea.input100 {
   flex-direction: column;
   position: fixed;
   right: 1%;
-  bottom: 75%;
+  bottom: 50%;
   gap: 25px;
 }
 
@@ -615,6 +613,7 @@ nav ul {
   gap: unset;
   display: unset;
   padding-right: unset;
+  
 }
  nav ul li {
   margin: 6px;
