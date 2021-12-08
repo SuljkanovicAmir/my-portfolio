@@ -377,7 +377,7 @@ textarea.input100 {
   }
   
 
-  .bmc-btn-container {
+  .btn-container {
     display: flex;
     position: sticky;
     padding-bottom: 34px;
@@ -387,13 +387,15 @@ textarea.input100 {
     padding-bottom: 20px;
     padding-left: 20px;
   }
-  .bmc-btn {
+  a.kofi-button {
+    padding: 3px 6px;
     min-width: 160px !important;
-    padding: 0px 10px !important;
     font-size: 14px !important;
-    height: 55px !important;
   }
-  .bmc-btn:hover {
+  span.kofitext {
+    padding: 4px 5px
+  }
+  .kofi-button:hover {
     background-color: #403866 !important;
   }
   
@@ -655,7 +657,7 @@ nav ul.show {
   gap: 40px;
 }
 
-.bmc-btn-container {
+.btn-container {
   display: flex;
   position: sticky;
   padding-bottom: unset;
@@ -665,11 +667,10 @@ nav ul.show {
   padding-bottom: 20px;
   padding-left: 20px;
 }
-.bmc-btn {
-  min-width: 120px !important;
+a.kofi-button {
+  min-width: 100px !important;
   padding: 0px 10px !important;
-  font-size: 12px !important;
-  height: 55px !important;
+  font-size: 13px !important;
 }
 
 
