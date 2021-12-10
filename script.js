@@ -27,3 +27,15 @@ navLink.forEach((link) =>
   })
 );
 
+let i = 0, myTitle;
+myTitle = "Hello, I'm Amir Suljkanović.\r\nI'm a web developer.";
+
+function typing () {
+  if( i < myTitle.length) {
+    document.querySelector('#mytitle').textContent += myTitle.charAt(i);
+    i++;
+    setTimeout(typing, 50);
+  }
+}
+
+typing();

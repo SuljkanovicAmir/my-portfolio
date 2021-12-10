@@ -1,0 +1,208 @@
+@media screen and (max-width: 420px) {
+    html {
+      height: 100%;
+    }
+    
+    .main-body {
+      overflow-x: hidden;
+      background-image: url("/styles/backgroundmobile.jpg");
+      background-size: cover;
+    }
+    
+    .containerNav {
+      justify-content: space-between;
+      gap: 27px;
+      margin-bottom: 50px;
+    }
+    .picture-header {
+      padding-top: 18px;
+      padding-left: 8px;
+    }
+    .picture-header img {
+      width: 50px;
+    }
+    .containerNav nav {
+      padding-right: 0;
+      gap: 20px;
+    }
+    .containerNav nav a {
+      font-size: 18px;
+    }
+    
+    /* main container below */
+    .main-section {
+      min-height: 600px;
+    }
+    .main-container {
+      justify-content: unset;
+    }
+    
+    .main-container h1 {
+      font-size: 36px;
+      line-height: 50px;
+      padding-top: 15px;
+      min-width: 262px !important;
+      white-space: unset;
+      padding-left: unset;
+    }
+    #mytitle {
+      white-space: unset;
+      min-inline-size: min-content;
+      max-inline-size: min-content;
+     
+    }
+    .main-container p {
+      padding-left: 0;
+      font-size: 21px;
+      line-height: 30px;
+    }
+  
+    /* my projects below */
+  
+    .title2 h1 {
+      font-size: 40px;
+      margin-bottom: revert;
+  
+  }
+   .project-container {
+      flex-wrap: wrap;
+      padding-bottom: 50px;
+      height: unset;
+    }
+    #projectsection {
+      min-height: 800px;
+      height: unset;
+    }
+    .img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    
+  
+  /*contact section below */
+  .contact-section {
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: unset;
+  }
+  .form-title {
+    font-size: 40px;
+  }
+  .contact-container {
+     width: 200px;
+     display: flex;
+     justify-content: center;
+  }
+  
+  .contact-input {
+    width: 200px;
+  }
+  textarea.input100 {
+    min-width: 200px;
+    max-width: 200px;
+  }
+  .container-btn {
+    padding-left: 0;
+  }
+  
+  .form-btn {
+    min-width: 110px;
+    height: 45px;
+  }
+  .container-btn {
+    padding-top: 0;
+  }
+  
+  /* social below */
+  .socicon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .up-arrow {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 2px;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .socials {
+    right: unset;
+    justify-self: center;
+    bottom: 3%;
+    gap: 20px;
+    flex-direction: row;
+    position: sticky;
+  }
+  
+  .scroll-up {
+    right: 4%;
+  }
+  
+  
+  nav ul {
+    list-style-type: none ;
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 36px;
+    left: 57%;
+    width: 39%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -webkit-overflow-scrolling: touch;
+    padding-left: 0;
+    border-radius: 5px;
+    gap: unset;
+    display: unset;
+    padding-right: unset;
+    
+  }
+   nav ul li {
+    margin: 6px;
+  }
+  .burger-menu {
+    display: block;
+    visibility: visible;
+  }
+  .burger-menu > img {
+    width: 50px;
+    height: 50px;
+  }
+  nav ul.show {
+    transform: translateX(0);
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 3%;
+    position: sticky;
+    gap: 40px;
+  }
+  
+  .btn-container {
+    display: flex;
+    position: sticky;
+    padding-bottom: unset;
+    padding-left: unset;
+  }
+  #coffee-btn {
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+  a.kofi-button {
+    min-width: 100px !important;
+    padding: 0px 10px !important;
+    font-size: 13px !important;
+  }
+  
+  
+  } 
+  
