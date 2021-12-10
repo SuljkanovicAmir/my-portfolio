@@ -31,11 +31,23 @@ let i = 0, myTitle;
 myTitle = "Hello, I'm Amir Suljkanović.\r\nI'm a web developer.";
 
 function typing () {
-  if( i < myTitle.length) {
+  if(i < myTitle.length) {
     document.querySelector('#mytitle').textContent += myTitle.charAt(i);
     i++;
-    setTimeout(typing, 50);
+    setTimeout(typing, 75);
   }
 }
 
-typing();
+let j = 0, myP;
+myP = "I have 1 year experience at HTML, CSS and Javascript. \r\nI value honesty and integrity above all else. These ideals \r\nguide my approach to problem solving and life in general." ;
+
+function typingP () {
+  if(j < myP.length) {
+    document.querySelector('#myp').textContent += myP.charAt(j);
+    j++;
+    setTimeout(typingP, 40);
+  }
+}
+
+setTimeout(typing, 400);
+setTimeout(typingP, 4500);

@@ -86,6 +86,7 @@ nav ul {
     margin-left: auto;
     flex-direction: column;
     min-inline-size: min-content;
+    white-space: pre;
 }
 .main-container h1 {
     font-family: 'GT Walsheim Pro Bold Regular';
@@ -547,21 +548,18 @@ textarea.input100 {
   }
   .main-container {
     justify-content: unset;
+    white-space: unset;
   }
   
   .main-container h1 {
     font-size: 36px;
     line-height: 50px;
-    padding-top: 15px;
+    padding-top: 45px;
     min-width: 100% !important;
-    white-space: unset;
     padding-left: unset;
   }
   #mytitle {
     white-space: unset;
-    min-inline-size: min-content;
-    max-inline-size: min-content;
-   
   }
   .main-container p {
     padding-left: 0;
@@ -766,12 +764,13 @@ a.kofi-button {
   }
   .main-container {
     justify-content: unset;
+    white-space: unset;
   }
   
   .main-container h1 {
     font-size: 44px;
     line-height: 50px;
-    padding-top: 15px;
+    padding-top: 45px;
     min-width: 100% !important;
     white-space: unset;
     padding-left: unset;
