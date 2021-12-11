@@ -699,7 +699,7 @@ nav ul {
   position: fixed;
   background-color: var(--bg-color);
   flex-direction: column;
-  top: 36px;
+  top: 45px;
   left: 57%;
   width: 39%;
   text-align: center;
@@ -715,7 +715,7 @@ nav ul {
   
 }
  nav ul li {
-  margin: 6px;
+  margin: 10px;
 }
 .burger-menu {
   display: block;
