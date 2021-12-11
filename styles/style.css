@@ -14,9 +14,17 @@
     font-family: 'GTWalsheimPro-Light';
     src: url('./fonts/GTWalsheimPro-Light.ttf')
 }
+
+
 html {
   overflow-x: hidden;
 }
+
+*:focus {
+  outline: none;
+}
+
+
 
 body {
     display: grid;
@@ -43,7 +51,6 @@ nav ul {
   list-style-type: none;
   gap: 40px;
   color: white;
-  font-size: 24px;
   font-family: 'Pitchsans-Semibold', sans-serif;
 }
 
@@ -60,18 +67,18 @@ nav ul {
     text-decoration: none;
     list-style-type: none;
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     font-family: 'Pitchsans-Semibold', sans-serif;
 }
 
 .main-section
 {
     box-sizing: border-box;
-    min-height: 700px;
+    min-height: 800px;
 }
 #projectsection,
 .contact-section {
-    height: 800px;
+    min-height: 850px;
     box-sizing: border-box;
 }
 
@@ -90,10 +97,10 @@ nav ul {
 }
 .main-container h1 {
     font-family: 'GT Walsheim Pro Bold Regular';
-    font-size: 66px;
+    font-size: 64px;
     line-height: 88px;
     padding-left: 70px;
-    padding-bottom: 50px;
+    padding-bottom: 1.6em;
     margin-top: 0%;
     max-width: 900px;
     
@@ -105,7 +112,7 @@ nav ul {
 
 
 .main-container p {
-    font-size: 28px;
+    font-size: 26px;
     margin-top: 0px;
     padding-left: 73px;
     line-height: 40px;
@@ -124,7 +131,7 @@ nav ul {
     font-family: 'GT Walsheim Pro Bold Regular';
 }
 .title2 h1 {
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 0;
 }
 
@@ -319,10 +326,12 @@ textarea.input100 {
     transition: all 0.4s;
   }
   
-  .form-btn:hover:before {
+  .form-btn:hover:before,
+  .form-btn:focus::before {
     background-color: #403866;
     width: calc(100% + 20px);
   }
+  
   
 
   .alert-validate::before {
@@ -399,39 +408,17 @@ textarea.input100 {
   a.kofi-button {
     padding: 3px 6px;
     min-width: 160px !important;
-    font-size: 14px !important;
+    font-size: 14px;
   }
   span.kofitext {
     padding: 4px 5px
   }
-  .kofi-button:hover {
+  .kofi-button:hover,
+  .kofi-button:focus {
     background-color: #403866 !important;
   }
   
-  @media (max-width: 992px) {
-    .alert-validate::before {
-      visibility: visible;
-      opacity: 1;
-    }
-    .main-container{
-      min-inline-size: min-content;
-    }
 
-    .main-container h1 {
-      font-family: 'GT Walsheim Pro Bold Regular';
-      font-size: 66px;
-      line-height: 88px;
-      padding-left: unset;
-      padding-bottom: 50px;
-      margin-top: 0%;
-  }
-  .main-container p {
-    padding-left: unset;
-  }
-
-
-  }
-  
 
   textarea {
     outline: none;
@@ -440,6 +427,7 @@ textarea.input100 {
   
   textarea:focus, input:focus {
     border-color: transparent !important;
+    background-color: whitesmoke  ;
   }
 
   input {
@@ -493,7 +481,7 @@ textarea.input100 {
   flex-direction: column;
   position: fixed;
   right: 1%;
-  bottom: 50%;
+  bottom: 45%;
   gap: 25px;
 }
 
@@ -503,7 +491,52 @@ textarea.input100 {
 }
 
 
-/* Media content below */
+.containerNav nav a:hover,
+.containerNav nav a:focus  {
+  color: wheat;
+}
+
+.socials a:focus,
+.socials img:hover {
+  transform: scale(1.3);
+}
+
+.picture-header a:focus,
+.picture-header img:hover {
+  transform: scale(1.1);
+}
+
+
+.img:hover,
+.project-container a:focus {
+  transform: scale(1.1);
+}
+
+.up-arrow:hover,
+#scoll-up i:focus {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*==================
+
+Media content below max 550px
+
+====================*/
+
+
+
+
+
 
 
 
@@ -561,13 +594,17 @@ textarea.input100 {
   #mytitle {
     white-space: unset;
   }
+
   .main-container p {
     padding-left: 0;
     font-size: 21px;
     line-height: 30px;
   }
 
-  /* my projects below */
+  /*
+  ===================== 
+    my projects below 
+  =====================*/
 
   .title2 h1 {
     font-size: 40px;
@@ -590,7 +627,9 @@ textarea.input100 {
 
   
 
-/*contact section below */
+/*=====================  
+  contact section below 
+  ======================*/
 .contact-section {
   min-height: 700px;
   display: flex;
@@ -626,7 +665,11 @@ textarea.input100 {
   padding-top: 0;
 }
 
-/* social below */
+/*=============== 
+  social below 
+  ===============*/
+
+
 .socicon {
   width: 2rem;
   height: 2rem;
@@ -650,7 +693,6 @@ textarea.input100 {
 .scroll-up {
   right: 4%;
 }
-
 
 nav ul {
   list-style-type: none ;
@@ -718,11 +760,11 @@ a.kofi-button {
 
 
 
+/*======================
 
+  MEDIA SCREEN 550px - 980px BELOW
 
-
-
-
+  =======================*/
 
 
 
@@ -775,6 +817,7 @@ a.kofi-button {
     white-space: unset;
     padding-left: unset;
   }
+
   #mytitle {
     white-space: unset;
     min-inline-size: min-content;
@@ -792,8 +835,7 @@ a.kofi-button {
   .title2 h1 {
     font-size: 40px;
     margin-bottom: revert;
-
-}
+  }
  .project-container {
     flex-wrap: wrap;
     padding-bottom: 50px;
@@ -934,4 +976,97 @@ a.kofi-button {
 }
 
 
+}
+
+
+
+
+/* =======================
+
+    MEDIA CONTENT BELOW MIN 2500px
+
+    ======================*/
+
+
+@media screen and (min-width: 2800px) {
+/* nav bar */
+  .nav-bar a {
+    font-size: 36px !important;
+  }
+
+/* main container */
+  .main-container {
+    min-height: 1100px;
+  }
+  .main-container h1 {
+    font-size: 84px;
+  }
+  .main-container p {
+    font-size: 40px ;
+  }
+/* myproject section */
+  #projectsection {
+    min-height: 1100px !important;
+    height: unset;
+  }
+  .project-container {
+    min-height: 1100px;
+   
+  }
+  .title2 h1 {
+    font-size: 74px;
+  }
+  .img {
+    height: 300px;
+    width: 300px;
+  }
+  .text {
+    font-size: 34px;
+    width: 300px;
+  }
+  /* contact section below */
+  #contactsection {
+    min-height: 1100px !important;
+  }
+  .form-title {
+    font-size: 74px;
+    padding-top: 50px;
+  }
+  .form-container {
+    width: 700px;
+    min-height: 700px;
+  }
+  .contact-form {
+    min-width: 100%;
+  }
+  .input100 {
+    font-size: 30px;
+  }
+  textarea.input100 {
+    min-height: 200px;
+    min-width: 700px;
+    max-width: 700px;
+  }
+  .form-btn {
+    font-size: 28px;
+    padding: 0 25px
+  }
+  .a.kofi-button {
+    font-size: 44px;
+  }
+  /* soc-icons*/
+  .socicon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+}
+
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+ 
 }

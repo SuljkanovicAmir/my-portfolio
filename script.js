@@ -34,7 +34,7 @@ function typing () {
   if(i < myTitle.length) {
     document.querySelector('#mytitle').textContent += myTitle.charAt(i);
     i++;
-    setTimeout(typing, 75);
+    setTimeout(typing, 50);
   }
 }
 
@@ -45,9 +45,9 @@ function typingP () {
   if(j < myP.length) {
     document.querySelector('#myp').textContent += myP.charAt(j);
     j++;
-    setTimeout(typingP, 40);
+    setTimeout(typingP, 30);
   }
 }
 
 setTimeout(typing, 400);
-setTimeout(typingP, 4500);
+setTimeout(typingP, 3500);
