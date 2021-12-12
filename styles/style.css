@@ -223,7 +223,7 @@ nav ul {
     color: black;
     line-height: 1.2;
     box-shadow: 0 0 10px rgb(0 0 0 / 75%);
-
+    -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 75%);
   }
 
   input.input100 {
@@ -774,6 +774,17 @@ a.kofi-button {
 }
 
 
+.containerNav nav a:hover,
+.containerNav nav a:focus  {
+  color: #8f8fa1;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+
+
+
 } 
 
 
@@ -1000,6 +1011,14 @@ a.kofi-button {
   padding: 0px 10px !important;
   font-size: 13px !important;
 }
+
+.containerNav nav a:hover,
+.containerNav nav a:focus  {
+  color: #8f8fa1;
+  text-decoration: none;
+  font-size: 18px;
+}
+
 
 
 }
