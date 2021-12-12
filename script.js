@@ -1,4 +1,4 @@
-const { EmailJSResponseStatus } = require("emailjs-com");
+
 
 let scrollUp = document.querySelector('.scroll-up')
 
@@ -57,13 +57,12 @@ setTimeout(typingP, 3500);
 
 function sendMail (params) {
   let tempParams = {
-    name: document.querySelector('[name="name"]').value,
-    email: document.querySelector('[name="email"]').value,
-    message: document.querySelector('[message="email"]').value;
-  };
-
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  }
   emailjs.send('portfolio_email','template_nrdx09h', tempParams)
   .then(function(res) {
-    
-  })
+    console.log("succes", res.status);
+  });
 }
