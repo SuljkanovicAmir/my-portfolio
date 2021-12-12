@@ -29,7 +29,7 @@ html {
 body {
     display: grid;
     margin: 0;
-    background-image: url("./background1.1.jpg");
+    background-image: url("./whitebackground.jpg");
     background-size: cover;
 }
 
@@ -61,12 +61,14 @@ nav ul {
 }
 .picture-header img {
     width: 60px;
+    -webkit-filter: invert(1);
+    filter: invert(1);
 }
 
 .containerNav nav a{
     text-decoration: none;
     list-style-type: none;
-    color: white;
+    color: black;
     font-size: 22px;
     font-family: 'Pitchsans-Semibold', sans-serif;
 }
@@ -122,7 +124,7 @@ nav ul {
 .img {
     height: 200px;
     width: 200px;
-    border: 2px solid white;
+    border: 2px solid #8f8fa1;
     border-radius: 5px;
 }
 
@@ -217,8 +219,9 @@ nav ul {
     border-radius: 31px;
     font-family: "GTWalsheimPro-Light";
     font-size: 18px;
-    color: #8f8fa1;
+    color: black;
     line-height: 1.2;
+    border: 2px solid #8f8fa1;
   }
 
   input.input100 {
@@ -415,7 +418,7 @@ textarea.input100 {
   }
   .kofi-button:hover,
   .kofi-button:focus {
-    background-color: #403866 !important;
+    background-color: #8f8fa1 !important;
   }
   
 
@@ -426,8 +429,10 @@ textarea.input100 {
   }
   
   textarea:focus, input:focus {
-    border-color: transparent !important;
-    background-color: whitesmoke  ;
+    background-color: rgb(235, 255, 254)  ;
+    border: 3px solid #8f8fa1 !important;
+    color: black;
+    font-weight: 500;
   }
 
   input {
@@ -488,12 +493,21 @@ textarea.input100 {
 .socicon {
   width: 2.5rem;
   height: 2.5rem;
+  box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+  border-radius: 50%;
+  padding: 3px;
 }
 
 
 .containerNav nav a:hover,
 .containerNav nav a:focus  {
-  color: wheat;
+  color: #8f8fa1;
+  text-decoration: underline;
+  font-size: 140%;
+}
+
+.myproject:hover {
+  transform: scale(1.5);
 }
 
 .socials a:focus,
@@ -551,7 +565,7 @@ Media content below max 550px
   
   .main-body {
     overflow-x: hidden;
-    background-image: url("/styles/backgroundmobile.jpg");
+    background-image: url("/styles/mobilebcg.jpg");
     background-size: cover;
   }
   
@@ -776,7 +790,7 @@ a.kofi-button {
   
   .main-body {
     overflow-x: hidden;
-    background-image: url("/styles/backgroundmobile.jpg");
+    background-image: url("/styles/mobilebcg.jpg");
     background-size: cover;
   }
   
