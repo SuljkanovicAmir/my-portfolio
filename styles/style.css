@@ -223,7 +223,7 @@ nav ul {
     color: black;
     line-height: 1.2;
     box-shadow: 0 0 10px rgb(0 0 0 / 75%);
-    -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 75%);
+    -webkit-appearance: none;
   }
 
   input.input100 {
