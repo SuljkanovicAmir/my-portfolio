@@ -1,5 +1,4 @@
 
-
 let scrollUp = document.querySelector('.scroll-up')
 
 
@@ -54,15 +53,51 @@ function typingP () {
 setTimeout(typing, 400);
 setTimeout(typingP, 3500);
 
+function validate() {
+let formName = document.querySelector("#name");
+let email = document.querySelector("#email");
+let msg = document.querySelector("#message");
+let btn = document.querySelector("#btn");
 
-function sendMail (params) {
-  let tempParams = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    message: document.getElementById('message').value,
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (formName.value == "" || email.value == "" || msg.value == "") {
+    emptyerror();
+  } else {
+    sendMail(formName.value, email.value, msg.value);
+    success();
   }
-  emailjs.send('portfolio_email','template_nrdx09h', tempParams)
-  .then(function(res) {
-    console.log("succes", res.status);
+});
+}
+validate();
+
+
+
+function sendMail (formName, email, msg) {
+  emailjs.send('portfolio_email', 'template_nrdx09h',{
+  formName: formName,
+  email: email,
+  msg: msg,
+  });
+}
+
+function emptyerror() {
+  Swal.fire({
+    icon: "error",
+    title: "Fields can't be empty!",
+  });
+}
+
+function error() {
+  Swal.fire({
+    icon: "error",
+    title: "Something went wrong!",
+  });
+}
+
+function success() {
+  Swal.fire({
+    icon: "success",
+    title: "Successfully sent message",
   });
 }

@@ -24,7 +24,18 @@ html {
   outline: none;
 }
 
-
+.swal2-popup {
+  border-radius: 6%;
+  width: 28em;
+  box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+  font-family: 'GTWalsheimPro-Light', sans-serif;
+  opacity: 90%;
+ 
+}
+.swal2-styled.swal2-confirm {
+  border-radius: 10% !important;
+  font-family: 'GTWalsheimPro-Light', sans-serif;
+}
 
 body {
     display: grid;
@@ -565,6 +576,15 @@ Media content below max 550px
   html {
     height: 100%;
   }
+  .swal2-popup {
+    border-radius: 6%;
+    width: 70%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    font-family: 'GTWalsheimPro-Light', sans-serif;
+    font-size: 0.9rem;
+  }
+
+
 
   .main-body {
     overflow-x: hidden;

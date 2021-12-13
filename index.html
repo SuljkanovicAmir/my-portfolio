@@ -17,6 +17,8 @@
         emailjs.init("user_2UTWj4IrdGhsK1zHytJy4");
         })();
     </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 </head>
 <body class="main-body">
    
@@ -68,22 +70,22 @@
         <h1 class="form-title">Contact Me</h1>
         <div class="contact-container">
             <div class="form-container">
-               <form  class="contact-form">
+               <form id="contact-form" class="contact-form">
                     <div class="contact-input validate-input" data-validate="Please enter your name">
-					    <input class="input100" type="text" name="name" placeholder="Full Name">
+					    <input class="input100" type="text" id="name" name="name" placeholder="Full Name">
 					    <span class="focus-input"></span>
 				    </div>
                     <div class="contact-input validate-input" data-validate= "Please enter your email: e@a.x">
-					    <input class="input100" type="text" name="email" placeholder="E-mail">
+					    <input class="input100" type="text" id="email" name="email" placeholder="E-mail">
 					    <span class="focus-input"></span>
 				    </div>
                     <div class="contact-input validate-input" data-validate="Please enter your message">
-					    <textarea class="input100" type="text" name="message" placeholder="Your message"></textarea>
+					    <textarea class="input100" type="text" id="message" name="message" placeholder="Your message"></textarea>
 					    <span class="focus-input"></span>
 				    </div>  
                     
                     <div class="container-btn">
-                        <button onclick="sendMail()" class="form-btn">
+                        <button id="btn" class="form-btn">
                             <span>
                                 <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
                                 Send
