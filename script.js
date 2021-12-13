@@ -100,3 +100,16 @@ function success() {
     title: "Successfully sent message",
   });
 }
+ 
+function swalMessage () {
+  Swal.fire('Links to projects will be added later');
+}
+
+
+
+let projectImg = document.querySelectorAll('.img').forEach(item => {
+  item.addEventListener('click', () => {
+   swalMessage();
+});
+});
+

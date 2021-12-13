@@ -25,7 +25,7 @@ html {
 }
 
 .swal2-popup {
-  border-radius: 6% !important;
+  border-radius: 6px !important;
   width: 28em !important;
   box-shadow: 0 0 10px rgb(0 0 0 / 70%) !important;
   font-family: 'GTWalsheimPro-Light', sans-serif !important;
