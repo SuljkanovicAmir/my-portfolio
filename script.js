@@ -20,7 +20,7 @@ burger.addEventListener("click", () => {
   });
 
 
-const navLink = document.querySelectorAll(".nav-link");
+const navLink = document.querySelectorAll(".navigation");
 
 navLink.forEach((link) =>
   link.addEventListener("click", () => {
