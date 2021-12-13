@@ -54,32 +54,31 @@ setTimeout(typing, 400);
 setTimeout(typingP, 3500);
 
 function validate() {
-let formName = document.querySelector("#name");
+let name = document.querySelector("#name");
 let email = document.querySelector("#email");
 let msg = document.querySelector("#message");
 let btn = document.querySelector("#btn");
 
 btn.addEventListener("click", (e) => {
   e.preventDefault();
-  if (formName.value == "" || email.value == "" || msg.value == "") {
+  if (name.value == "" || email.value == "" || msg.value == "") {
     emptyerror();
   } else {
-    sendMail(formName.value, email.value, msg.value);
+    sendMail(name.value, email.value, msg.value);
     success();
   }
 });
 }
 validate();
+ 
 
-
-
-function sendMail (formName, email, msg) {
+function sendMail (name, email, msg) {
   emailjs.send('portfolio_email', 'template_nrdx09h',{
-  formName: formName,
   email: email,
+  name: name,
   msg: msg,
   });
-}
+};
 
 function emptyerror() {
   Swal.fire({

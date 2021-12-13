@@ -25,12 +25,12 @@ html {
 }
 
 .swal2-popup {
-  border-radius: 6%;
-  width: 28em;
-  box-shadow: 0 0 10px rgb(0 0 0 / 70%);
-  font-family: 'GTWalsheimPro-Light', sans-serif;
-  opacity: 90%;
- 
+  border-radius: 6% !important;
+  width: 28em !important;
+  box-shadow: 0 0 10px rgb(0 0 0 / 70%) !important;
+  font-family: 'GTWalsheimPro-Light', sans-serif !important;
+  opacity: 90% !important;
+  -webkit-appearance: none;
 }
 .swal2-styled.swal2-confirm {
   border-radius: 10% !important;
@@ -576,12 +576,12 @@ Media content below max 550px
   html {
     height: 100%;
   }
-  .swal2-popup {
-    border-radius: 6%;
-    width: 70%;
-    box-shadow: 0 0 10px rgb(0 0 0 / 70%);
-    font-family: 'GTWalsheimPro-Light', sans-serif;
-    font-size: 0.9rem;
+  .swal2-popup  {
+    border-radius: 6% !important; 
+    width: 70% !important;
+    box-shadow: 0 0 10px rgb(0 0 0 / 70%) !important;
+    font-family: 'GTWalsheimPro-Light', sans-serif !important;
+    font-size: 0.9rem !important;
   }
 
 
