@@ -82,7 +82,6 @@ function sendMail (name, email, msg) {
 
 function emptyerror() {
   Swal.fire({
-    icon: "error",
     title: "Fields can't be empty!",
   });
 }
