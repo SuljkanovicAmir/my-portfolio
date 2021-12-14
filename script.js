@@ -105,10 +105,10 @@ function swalMessage () {
 }
 
 
-
+/*
 let projectImg = document.querySelectorAll('.img').forEach(item => {
   item.addEventListener('click', () => {
    swalMessage();
 });
 });
-
+*/
