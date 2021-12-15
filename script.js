@@ -114,24 +114,24 @@ let projectImg = document.querySelectorAll('.img').forEach(item => {
 });
 */
 
-const logo = document.querySelector('.containerNav');
+const logo = document.querySelector('.picture-header');
 const mainParagraph = document.querySelector('#myp')
 const socials = document.querySelector('.socials')
 
 const tl = gsap.timeline();
-  tl.to('.containerNav', {y: -2000, duration: 1}, "-=2");
-  tl.to('.containerNav', {y: 40, duration: 1.5});
-  tl.to('.containerNav', {y: 00, duration: 2, delay: 0});
+  tl.to('.picture-header', {y: -2000, duration: 1}, "-=2");
+  tl.to('.picture-header', {y: 40, duration: 2});
+  tl.to('.picture-header', {y: 00, duration: 1, delay: 0});
 
 
-  tl.to('#myp', {x: -2300, duration: 1}, "-=5");
-  tl.to('#myp', {x: 50, duration: 2});
+  tl.to('#myp', {x: -2200, duration: 1}, "-=7");
+  tl.to('#myp', {x: 50, duration: 1});
   tl.to('#myp', {x: 00, duration: 0.5});
 
   if (window.innerWidth < 1024) {
     false;
   } else {
-    tl.to('.socials', {x: 150, duration: 0}, "-=10");
+    tl.to('.socials', {x: 150, duration: 0}, "-=15");
     tl.to('.socials', {x: -30, duration: 1});
     tl.to('.socials', {x: 00, duration: 0.5});
   }
