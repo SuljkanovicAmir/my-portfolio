@@ -119,12 +119,12 @@ const mainParagraph = document.querySelector('#myp')
 const socials = document.querySelector('.socials')
 
 const tl = gsap.timeline();
-  tl.to('.picture-header', {y: -2000, duration: 1}, "-=2");
-  tl.to('.picture-header', {y: 20, duration: 4});
+  tl.to('.picture-header', {y: -1200, duration: 1}, "-=2");
+  tl.to('.picture-header', {y: 20, duration: 2.2});
   tl.to('.picture-header', {y: 00, duration: 1});
 
 
-  tl.to('#myp', {x: -2200, duration: 1}, "-=7");
+  tl.to('#myp', {x: -1700, duration: 0,}, "-=15");
   tl.to('#myp', {x: 00, duration: 2.2});
 
   if (window.innerWidth < 1024) {
