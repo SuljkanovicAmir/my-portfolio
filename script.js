@@ -143,7 +143,7 @@ const tl = gsap.timeline();
 window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (document.body.scrollTop > 125 || document.documentElement.scrollTop > 125) {
       document.querySelector(".scroll-up").style.visibility = "visible";
     } else {
       document.querySelector(".scroll-up").style.visibility = "hidden";
