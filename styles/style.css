@@ -492,9 +492,10 @@ textarea.input100 {
 
 .scroll-up {
   position: fixed;
-  right: 1%;
+  right: 1.5%;
   bottom: 3%;
   cursor: pointer;
+  visibility: hidden;
 }
 
 .up-arrow {
@@ -506,7 +507,7 @@ textarea.input100 {
   display: flex;
   flex-direction: column;
   position: fixed;
-  right: 1%;
+  right: 1.5%;
   bottom: 45%;
   gap: 25px;
 }
@@ -1051,6 +1052,23 @@ a.kofi-button {
 
 
 }
+
+
+
+
+.animate {
+  bottom: -50px;
+}
+
+.sticky {
+  bottom:unset;
+}
+
+
+
+
+
+
 
 
 

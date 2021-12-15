@@ -135,3 +135,18 @@ const tl = gsap.timeline();
     tl.to('.socials', {x: -30, duration: 1});
     tl.to('.socials', {x: 00, duration: 0.5});
   }
+
+
+  document.querySelectorAll('.fade-in'); 
+
+
+window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      document.querySelector(".scroll-up").style.visibility = "visible";
+    } else {
+      document.querySelector(".scroll-up").style.visibility = "hidden";
+    }
+} 
+
