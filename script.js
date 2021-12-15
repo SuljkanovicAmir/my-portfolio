@@ -38,7 +38,8 @@ function typing () {
     setTimeout(typing, 50);
   }
 }
-setTimeout(typing, 400);
+setTimeout(typing, 1000);
+
 let j = 0, myP;
 myP = "I have 1 year experience at HTML, CSS and Javascript. \r\nI value honesty and integrity above all else. These ideals \r\nguide my approach to problem solving and life in general." ;
 
