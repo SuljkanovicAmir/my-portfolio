@@ -38,10 +38,11 @@ function typing () {
     setTimeout(typing, 50);
   }
 }
-
+setTimeout(typing, 400);
 let j = 0, myP;
 myP = "I have 1 year experience at HTML, CSS and Javascript. \r\nI value honesty and integrity above all else. These ideals \r\nguide my approach to problem solving and life in general." ;
 
+/*
 function typingP () {
   if(j < myP.length) {
     document.querySelector('#myp').textContent += myP.charAt(j);
@@ -50,9 +51,9 @@ function typingP () {
   }
 }
 
-setTimeout(typing, 400);
-setTimeout(typingP, 3500);
 
+setTimeout(typingP, 3500);
+*/
 function validate() {
 let name = document.querySelector("#name");
 let email = document.querySelector("#email");
@@ -112,3 +113,25 @@ let projectImg = document.querySelectorAll('.img').forEach(item => {
 });
 });
 */
+
+const logo = document.querySelector('.containerNav');
+const mainParagraph = document.querySelector('#myp')
+const socials = document.querySelector('.socials')
+
+const tl = gsap.timeline();
+  tl.to('.containerNav', {y: -150, duration: 0}, "-=1")
+  tl.to('.containerNav', {y: 30, duration: 1});
+  tl.to('.containerNav', {y: 00, duration: 1, delay: 0});
+
+
+  tl.to('#myp', {x: -3000, duration: 1}, "-=4");
+  tl.to('#myp', {x: 50, duration: 2.5});
+  tl.to('#myp', {x: 00, duration: 0.5});
+
+  if (window.innerWidth < 1024) {
+    false;
+  } else {
+    tl.to('.socials', {x: 150, duration: 0}, "-=5");
+    tl.to('.socials', {x: -30, duration: 1});
+    tl.to('.socials', {x: 00, duration: 0.5});
+  }

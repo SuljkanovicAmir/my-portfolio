@@ -75,7 +75,16 @@ nav ul {
     display: flex;
     padding-top: 35px;
     padding-left: 20px;
-}
+}/*
+.picture-header.show {
+  display: flex;
+  padding-top: 35px;
+  padding-left: 20px;
+  visibility: visible;
+  transform: translateY(0%);
+  transition: transform 0.5s ease-in;
+}*/
+
 .picture-header img {
     width: 60px;
     -webkit-filter: invert(1);
@@ -379,7 +388,7 @@ textarea.input100 {
     font-size: 13px;
     line-height: 1.4;
     text-align: left;
-  
+
     visibility: hidden;
     opacity: 0;
   
