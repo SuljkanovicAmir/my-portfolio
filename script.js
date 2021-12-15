@@ -119,7 +119,7 @@ const mainParagraph = document.querySelector('#myp')
 const socials = document.querySelector('.socials')
 
 const tl = gsap.timeline();
-  tl.to('.containerNav', {y: -150, duration: 0}, "-=1")
+  tl.to('.containerNav', {y: -1000, duration: 1}, "-=2");
   tl.to('.containerNav', {y: 30, duration: 1});
   tl.to('.containerNav', {y: 00, duration: 1, delay: 0});
 
@@ -131,7 +131,7 @@ const tl = gsap.timeline();
   if (window.innerWidth < 1024) {
     false;
   } else {
-    tl.to('.socials', {x: 150, duration: 0}, "-=5");
+    tl.to('.socials', {x: 150, duration: 0}, "-=10");
     tl.to('.socials', {x: -30, duration: 1});
     tl.to('.socials', {x: 00, duration: 0.5});
   }
