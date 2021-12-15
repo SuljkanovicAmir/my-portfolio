@@ -120,11 +120,11 @@ const socials = document.querySelector('.socials')
 
 const tl = gsap.timeline();
   tl.to('.containerNav', {y: -2000, duration: 1}, "-=2");
-  tl.to('.containerNav', {y: 30, duration: 2});
+  tl.to('.containerNav', {y: 40, duration: 1.5});
   tl.to('.containerNav', {y: 00, duration: 2, delay: 0});
 
 
-  tl.to('#myp', {x: -2500, duration: 1}, "-=5");
+  tl.to('#myp', {x: -2300, duration: 1}, "-=5");
   tl.to('#myp', {x: 50, duration: 2});
   tl.to('#myp', {x: 00, duration: 0.5});
 
