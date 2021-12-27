@@ -49,6 +49,9 @@ body {
     background-image: url("./whitebackground.jpg");
     background-size: cover;
 }
+.header {
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
 
 .containerNav {
     display: flex;
@@ -529,7 +532,7 @@ textarea.input100 {
 }
 
 .myproject:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 .socials a:focus,
