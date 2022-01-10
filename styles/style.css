@@ -557,7 +557,9 @@ textarea.input100 {
 }
 
 
-
+.xbutton {
+  display: none;
+}
 
 
 
@@ -747,26 +749,46 @@ textarea.input100 {
 nav ul {
   list-style-type: none ;
   position: fixed;
-  background-color: var(--bg-color);
+  background-color: white;
   flex-direction: column;
-  top: 45px;
-  left: 57%;
-  width: 39%;
+  top: 0px;
+  height: 100%;
+  left: 0%;
+  width: 100%;
   text-align: center;
-  transform: translateX(120%);
-  transition: transform 0.5s ease-in;
+  transform: translateY(-120%);
+  transition: transform 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   -webkit-overflow-scrolling: touch;
   padding-left: 0;
   border-radius: 5px;
-  gap: unset;
-  display: unset;
+  display: flex;
+  justify-content: center;
+  opacity: 0.97;
   padding-right: unset;
-  
+  z-index: 3;
+  gap: 40px;
+  margin-top: 0;
 }
  nav ul li {
   margin: 10px;
+  
 }
+nav a {
+  margin: 10px;
+  font-size: 40px !important;
+  text-shadow: 0px 1px #000;
+}
+
+.xbutton {
+  position: fixed;
+  right: 5%;
+  top: 3%;
+  width: 35px;
+  height: auto;
+  display: unset;
+}
+
 .burger-menu {
   display: block;
   visibility: visible;
@@ -810,7 +832,6 @@ a.kofi-button {
 .containerNav nav a:focus  {
   color: #8f8fa1;
   text-decoration: none;
-  font-size: 18px;
 }
 
 .socials a:focus,
@@ -987,29 +1008,50 @@ textarea.input100 {
 }
 
 
-nav ul {
+nav ul  {
   list-style-type: none ;
   position: fixed;
-  background-color: var(--bg-color);
+  background-color: white;
   flex-direction: column;
-  top: 36px;
-  left: 57%;
-  width: 39%;
+  top: 0px !important;
+  height: 100%;
+  left: 0% !important;
+  width: 100% !important;
   text-align: center;
-  transform: translateX(120%);
-  transition: transform 0.5s ease-in;
+  transform: translateY(-120%);
+  transition: transform 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   -webkit-overflow-scrolling: touch;
   padding-left: 0;
   border-radius: 5px;
-  gap: unset;
-  display: unset;
+  display: flex;
+  justify-content: center;
+  opacity: 0.97;
   padding-right: unset;
-  
+  z-index: 3;
+  gap: 40px;
+  margin-top: 0 !important;
 }
  nav ul li {
-  margin: 6px;
+  margin: 10px;
+  
 }
+nav a {
+  margin: 10px;
+  font-size: 48px !important;
+  text-shadow: 0px 1px #000;
+}
+
+.xbutton {
+  position: fixed;
+  right: 5%;
+  top: 3%;
+  width: 35px;
+  height: auto;
+  display: unset;
+}
+
+
 .burger-menu {
   display: block;
   visibility: visible;

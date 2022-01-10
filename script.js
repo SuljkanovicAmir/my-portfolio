@@ -20,6 +20,8 @@ burger.addEventListener("click", () => {
   });
 
 
+
+
 const navLink = document.querySelectorAll(".navigation");
 
 navLink.forEach((link) =>
@@ -149,4 +151,8 @@ window.onscroll = function() {scrollFunction()};
       document.querySelector(".scroll-up").style.visibility = "hidden";
     }
 } 
+
+
+
+
 
