@@ -1115,7 +1115,7 @@ a.kofi-button {
     ======================*/
 
 
-@media screen and (min-width: 2800px) {
+@media screen and (min-width: 2560px) {
 /* nav bar */
   .nav-bar a {
     font-size: 36px !important;

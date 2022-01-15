@@ -31,7 +31,7 @@ navLink.forEach((link) =>
 );
 
 let i = 0, myTitle;
-myTitle = "Hello, I'm Amir Suljkanović.\r\nI'm a web developer.";
+myTitle = "Hello, I'm Amir Suljkanović.\r\nI'm a front-end web developer.";
 
 function typing () {
   if(i < myTitle.length) {
