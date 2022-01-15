@@ -1123,13 +1123,17 @@ a.kofi-button {
 
 /* main container */
   .main-container {
-    min-height: 1100px;
+    min-height: 1000px;
+  }
+  .main-section {
+    padding-top: 200px;
   }
   .main-container h1 {
-    font-size: 84px;
+    font-size: 90px;
+    padding-bottom: 1em;
   }
   .main-container p {
-    font-size: 40px ;
+    font-size: 48px ;
   }
 /* myproject section */
   #projectsection {
@@ -1183,8 +1187,8 @@ a.kofi-button {
   }
   /* soc-icons*/
   .socicon {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
   }
 
 }

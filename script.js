@@ -127,7 +127,7 @@ const tl = gsap.timeline();
   tl.to('.picture-header', {y: 00, duration: 1});
 
 
-  tl.to('#myp', {x: -1700, duration: 0,}, "-=15");
+  tl.to('#myp', {x: -1900, duration: 0,}, "-=15");
   tl.to('#myp', {x: 00, duration: 2.2});
 
   if (window.innerWidth < 1024) {
