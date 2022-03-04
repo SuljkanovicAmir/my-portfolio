@@ -109,35 +109,6 @@ function swalMessage () {
 }
 
 
-/*
-let projectImg = document.querySelectorAll('.img').forEach(item => {
-  item.addEventListener('click', () => {
-   swalMessage();
-});
-});
-*/
-
-const logo = document.querySelector('.picture-header');
-const mainParagraph = document.querySelector('#myp')
-const socials = document.querySelector('.socials')
-
-const tl = gsap.timeline();
-  tl.to('.picture-header', {y: -1200, duration: 1}, "-=2");
-  tl.to('.picture-header', {y: 20, duration: 2.2});
-  tl.to('.picture-header', {y: 00, duration: 1});
-
-
-  tl.to('#myp', {x: -1900, duration: 0,}, "-=15");
-  tl.to('#myp', {x: 00, duration: 2.2});
-
-  if (window.innerWidth < 1024) {
-    false;
-  } else {
-    tl.to('.socials', {x: 150, duration: 0}, "-=15");
-    tl.to('.socials', {x: -30, duration: 1});
-    tl.to('.socials', {x: 00, duration: 0.5});
-  }
-
 
   document.querySelectorAll('.fade-in'); 
 
