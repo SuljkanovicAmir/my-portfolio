@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
     <link rel="stylesheet" href="styles/style.css" >
     <meta charset="UTF-8">
     <script src="script.js" defer></script>
@@ -32,12 +31,19 @@
         gtag('config', 'G-PLW0L2N6QN');
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js"></script>
 </head>
 <body class="main-body">
-    <div class="containerNav">
+    <div  class="firstScreen">
+        <h1>Hello, I'm <span class="highlight">Amir Suljkanović.</span><br> I'm a front-end web developer.</h1>
+        <a href="#containerNavs"><button class="firstBtn">View my work<img class="arrowBtn" src="./styles/uparrow.png"></button></a>
+    </div>
+    <div id="containerNavs" class="containerNav">
         <div class="picture-header show">
             <a href="index.html">
-            <img class="picture-header" src="./styles/logo.png"></a>
+            <h1 class="logoText">as</h1></a>
         </div>
         <div class="nav-bar">
         <nav>
@@ -142,9 +148,21 @@
         class="socicon up-arrow"
         alt="scroll-up"
     /></i>
-    <div class="coffee-container">
-        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#827ffe', 'V7V77BFNM');kofiwidget2.draw();</script> 
-    </div>
+   
 </footer>
 </body>
+<script>
+    VANTA.NET({
+   el: ".firstScreen",
+   mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0xcac6b5,
+          backgroundColor: 0xf0f0f0,
+          spacing: 22.0,
+          showDots: false,
+ })
+     </script>
 </html>
