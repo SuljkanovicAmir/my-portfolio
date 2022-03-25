@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <title>Amir Suljkanović</title>
-    <link rel="shortcut icon" href="styles/favicon1.ico"/>
+    <link rel="shortcut icon" href="styles/favicon.ico"/>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7131647528461969"
      crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -35,8 +35,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js"></script>
 </head>
-<body class="main-body">
-    <div  class="firstScreen">
+<body onload="myFunction()" >
+    <div  id="myDiv" class="main-body animate-bottom">
+    <div id="firstDiv"  class="firstScreen ">
         <h1>Hello, I'm <span class="highlight">Amir Suljkanović.</span><br> I'm a front-end web developer.</h1>
         <a href="#containerNavs"><button class="firstBtn">View my work<img class="arrowBtn" src="./styles/uparrow.png"></button></a>
     </div>
@@ -49,6 +50,7 @@
         <nav>
             <ul class="navigation">
                 <li><img class="xbutton" src="styles/icons8-x-50.png"></li>
+                <li><a class="myproject" href="#firstDiv">Home</a></li>
                 <li><a class="myproject" href="#mainsection">About</a></li>
                 <li><a class="myproject" href="#projectsection">Projects</a></li>
                 <li><a class="myproject" href="#contactsection">Contact</a></li>
@@ -60,33 +62,51 @@
         </div>
     </div>
     <div id="mainsection" class='main-section'>
+        <div id="mytitle">
+            <h1>about me.</h1>
+          </div>
         <div class='main-container'>
-          <h1 id="mytitle"></h1>
-          <p id="myp">I have 1 year experience at HTML, CSS and Javascript. <br>I value honesty and integrity above all else. These ideals <br>guide my approach to problem solving and life in general</p>
+            <h1 class="aboutMe">Hi, I'm Amir Suljkanović.</h1>
+            <p id="myp">
+                I am currently a final semester student at the Faculty of Crminalistics, 
+                Criminology and Security Studies at the University of Sarajevo - over
+                the past year I have decided to fulfill my interest in programming by
+                attending various credible online courses and researching about
+                web development. Through courses such as freeCodeCamp, Harvard's CS50,
+                Full Stack Open, The Odin Project, I became well acquainted with HTML,
+                CSS and the basics of JavaScript, React and Python.</p>
         </div>
     </div>
     <div id="projectsection" class="project-section">
-        <div class="title2"><h1>My projects.</h1></div>
+        <div class="title2"><h1>my projects.</h1></div>
         <div class="project-container">
             <div class="project">
                 <a id ="atag" href="https://github.com/SuljkanovicAmir/weatherapp" target="_blank" >
-                <img class="img" src="./styles/project-photos/weather.jpg"></a>
-                <div class="text">CS50 - Weather app project</div>
+                <img class="img" src="./styles/project-photos/1200x630wa.png"></a>
+                <div class="text">Weather App
+                    <p class="pText">CS50: Weather App project</p>
+                </div>
             </div>
             <div class="project">
                 <a id="atag" href="https://amir-etch-a-sketch.netlify.app/" target="_blank" >
-                <img class="img" src="styles/sketch2.jpg"></a>
-                <div class="text">Etch-a-sketch project</div>
+                <img class="img" src="styles/project-photos/restarurant.jpg"></a>
+                <div class="text">Restaurant
+                    <p class="pText">The Odin Project: Restaurant webpage</p>
+                </div>
             </div>
             <div class="project">
                 <a id="atag" target="_blank" href="https://amirlibrary.netlify.app/" >
                 <img class="img" src="./styles/project-photos/myLibrary.jpg"></a>
-                <div class="text">MyLibrary <br> project</div>
+                <div class="text">MyLibrary
+                    <p class="pText">The Odin Project: MyLibrary App</p>
+                </div>
             </div>
         </div>
     </div>
     <div id="contactsection" class="contact-section">
-        <h1 class="form-title">Contact Me</h1>
+        <div class="form-title">
+            <h1 >contact me.</h1>
+        </div>
         <div class="contact-container">
             <div class="form-container">
                <form id="contact-form" class="contact-form">
@@ -118,51 +138,35 @@
     
     <footer class="footer">
         <div class="socials">
-            <a href="https://twitter.com/" target="_blank"
-              ><img
-                src="./styles/social-photos/tw.png"
-                alt="Twitter"
-                loading="lazy"
-                class="socicon"
-            /></a>
-            <a href="https://www.instagram.com/suljkanovic.amir/" target="_blank"
-              ><img
-                src="./styles/social-photos/ig.png"
-                alt="Instagram"
-                loading="lazy"
-                class="socicon"
-            /></a>
             <a href="https://www.linkedin.com/in/amir-suljkanovi%C4%87-843230209/" target="_blank"
               ><img
-                src="./styles/social-photos/lnkd.png"
+                src="./styles/social-photos/linkd.svg"
                 alt="Linkedin"
                 loading="lazy"
                 class="socicon"
             /></a>
             <a href="https://github.com/SuljkanovicAmir" target="_blank"
-              ><img src="./styles/social-photos/gith.png" alt="Github" class="socicon"
+              ><img  src="./styles/social-photos/gh.svg" alt="Github" class="socicon"
             /></a>
-        </div class="fade-in">    
-    <i class="scroll-up fade-in" id="scroll-up"><img
-        src="./styles/uparrow.png"
-        class="socicon up-arrow"
-        alt="scroll-up"
-    /></i>
-   
-</footer>
+            <a href="https://github.com/SuljkanovicAmir" target="_blank"
+            ><img  class="line" src="./styles/social-photos/line.png" alt="Github" 
+          /></a>
+          
+        </div class="fade-in"> 
+            <i class="scroll-up fade-in" id="scroll-up"><img
+                src="./styles/uparrow.png"
+                class="socicon up-arrow"
+                alt="scroll-up"
+            /></i>
+    </footer>
+</div>
+    <div class="loader-wrapper">
+        <div id="loader"> </div>
+        <h1 class="loader-text">as</h1>
+    </div>
+    
 </body>
 <script>
-    VANTA.NET({
-   el: ".firstScreen",
-   mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          scale: 1.0,
-          scaleMobile: 1.0,
-          color: 0xcac6b5,
-          backgroundColor: 0xf0f0f0,
-          spacing: 22.0,
-          showDots: false,
- })
+  
      </script>
 </html>

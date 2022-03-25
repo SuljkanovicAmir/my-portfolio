@@ -29,7 +29,7 @@ navLink.forEach((link) =>
     ul.classList.remove("show");
   })
 );
-
+/*
 let i = 0, myTitle;
 myTitle = "Hello, I'm Amir Suljkanović.\r\nI'm a front-end web developer.";
 
@@ -44,7 +44,7 @@ setTimeout(typing, 1000);
 
 let j = 0, myP;
 myP = "I have 1 year experience at HTML, CSS and Javascript. \r\nI value honesty and integrity above all else. These ideals \r\nguide my approach to problem solving and life in general." ;
-
+/*
 /*
 function typingP () {
   if(j < myP.length) {
@@ -116,7 +116,7 @@ function swalMessage () {
 window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
-    if (document.body.scrollTop > 125 || document.documentElement.scrollTop > 125) {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
       document.querySelector(".scroll-up").style.visibility = "visible";
     } else {
       document.querySelector(".scroll-up").style.visibility = "hidden";
@@ -127,3 +127,29 @@ window.onscroll = function() {scrollFunction()};
 
 
 
+let myVar;
+
+function myFunction() {
+  
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() { 
+  document.querySelector('.loader-wrapper').style.display = "none";
+  document.querySelector(".main-body").style.display = "grid";
+  document.querySelector('.main-body').style.animation = "mynewmove 4s 2";
+  VANTA.NET({
+    el: ".firstScreen",
+    mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x595858,
+  backgroundColor: 0x0,
+  points: 15.00,
+  showDots: false
+  })
+}
