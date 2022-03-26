@@ -84,7 +84,10 @@ html {
   color: black;
 }
 .dark.form-text {
-  color: blac;
+  color: black;
+}
+.dark.burger-menu {
+  filter: invert(0);
 }
 .swal2-popup {
   border-radius: 6px !important;
@@ -314,7 +317,12 @@ nav ul {
 #projectsection {
   padding-top: 150px;
 }
-
+.text a {
+  color: white;
+}
+.dark.text a {
+  color: black
+}
 
 .text {
     font-size: 70px;
@@ -848,7 +856,7 @@ Media content below max 550px
 
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 700px) {
   html {
     height: 100%;
   }
@@ -1096,7 +1104,7 @@ nav a {
   right: 4%;
   top: 2%;
   width: 35px;
-  height: 30px;
+  height: 25px;
   display: unset;
   filter: invert(1);
 }
@@ -1111,6 +1119,7 @@ nav a {
 .burger-menu > img {
   width: 50px;
   height: 50px;
+  filter: contrast(2.5);
 }
 nav ul.show {
   transform: translateX(0);
@@ -1162,36 +1171,50 @@ a.kofi-button {
 
 /*======================
 
-  MEDIA SCREEN 550px - 980px BELOW
+  MEDIA SCREEN 700px - 1024px BELOW
 
   =======================*/
 
 
 
 
-@media screen and (min-width: 550px) and (max-width: 1024px) {
+@media screen and (min-width: 700px) and (max-width: 1024px) {
   html {
     height: 100%;
   }
   
-  .main-body {
-    overflow-x: hidden;
-    background-image: url("/styles/mobilebcg.jpg");
-    background-size: cover;
+ 
+  .firstScreen {
+    font-size: 20px;
   }
-  
+  .form-title {
+    font-size: 14px;
+    padding-bottom: 100px;
+  }
+  .text {
+    font-size: 60px;
+  }
+  .pText {
+    font-size: 16px;
+  }
+  .form-container h1  {
+    padding-left: unset;
+    font-size: 60px;
+    width: 80%;
+  }
+  .form-text {
+    width: 90%;
+    align-self: unset;
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
   .containerNav {
     justify-content: space-between;
     gap: 27px;
     margin-bottom: 50px;
   }
-  .picture-header {
-    padding-top: 18px;
-    padding-left: 8px;
-  }
-  .picture-header img {
-    width: 50px;
-  }
+
   .containerNav nav {
     padding-right: 0;
     gap: 20px;
@@ -1200,11 +1223,15 @@ a.kofi-button {
     font-size: 18px;
   }
 
-  nav ul {
-    top: 45px !important;
-    left: 70% !important;
-    width: 28% !important;
-  }
+.burger-menu {
+  display: block;
+    visibility: visible;
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    z-index: 98;
+    filter: invert(1);
+}
   
   /* main container below */
   .main-section {
@@ -1215,7 +1242,13 @@ a.kofi-button {
     justify-content: unset;
     white-space: unset;
   }
-  
+  .logoText {
+    position: fixed;
+    top: 1%;
+    left: 4%;
+    z-index: 100;
+    font-size: 35px;
+}
   .main-container h1 {
     font-size: 44px;
     line-height: 50px;
@@ -1226,13 +1259,7 @@ a.kofi-button {
     padding-bottom: 1em;
   }
 
-  #mytitle {
-    white-space: unset;
-    min-inline-size: min-content;
-    max-inline-size: min-content;
-   
-  }
-  .main-container p {
+    .main-container p {
     padding-left: 0;
     font-size: 25px;
     line-height: 30px;
@@ -1240,10 +1267,7 @@ a.kofi-button {
 
   /* my projects below */
 
-  .title2 h1 {
-    font-size: 40px;
-    margin-bottom: revert;
-  }
+  
  .project-container {
     flex-wrap: wrap;
     padding-bottom: 50px;
@@ -1254,11 +1278,7 @@ a.kofi-button {
     min-height: 600px;
     height: unset;
   }
-  .img {
-    width: 120px;
-    height: 120px;
-  }
-
+  
   
 
 /*contact section below */
@@ -1269,22 +1289,13 @@ a.kofi-button {
   align-items: center;
   height: unset;
 }
-.form-title {
-  font-size: 40px;
-}
+
 .contact-container {
    width: 200px;
    display: flex;
    justify-content: center;
 }
 
-.contact-input {
-  width: 200px;
-}
-textarea.input100 {
-  min-width: 200px;
-  max-width: 200px;
-}
 .container-btn {
   padding-left: 0;
 }
@@ -1303,8 +1314,6 @@ textarea.input100 {
   height: 2rem;
 }
 .up-arrow {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
   padding: 2px;
   width: 2.2rem;
   height: 2.2rem;
@@ -1321,35 +1330,39 @@ textarea.input100 {
 .scroll-up {
   right: 4%;
 }
+.form-container a {
+  align-self: unset;
+}
 
-
-nav ul  {
+nav ul {
   list-style-type: none ;
   position: fixed;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   flex-direction: column;
-  top: 0px !important;
+  top: 0px;
   height: 100%;
-  left: 0% !important;
-  width: 100% !important;
+  left: 0%;
+  width: 100%;
   text-align: center;
-  transform: translateY(-120%);
-  transition: transform 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transform: translateX(120%);
+  transition: .6s ease-in-out;
   -webkit-overflow-scrolling: touch;
   padding-left: 0;
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  opacity: 0.97;
   padding-right: unset;
-  z-index: 3;
-  gap: 40px;
-  margin-top: 0 !important;
+  z-index: 99;
+  gap: 10px;
+  margin-top: 0;
+  box-shadow: 0 0 10px rgb(0 0 0 / 90%);
+  font-family: "GTWalsheimPro-Light";
+}
+.dark nav ul {
+  background-color: white;
 }
  nav ul li {
   margin: 10px;
-  
 }
 nav a {
   margin: 10px;
@@ -1359,11 +1372,15 @@ nav a {
 
 .xbutton {
   position: fixed;
-  right: 5%;
-  top: 3%;
+  right: 4%;
+  top: 2%;
   width: 35px;
-  height: auto;
+  height: 25px;
   display: unset;
+  filter: invert(1);
+}
+.dark.xbutton {
+  filter: invert(0);
 }
 
 
@@ -1378,7 +1395,9 @@ nav a {
 nav ul.show {
   transform: translateX(0);
 }
-
+.line {
+  display: none
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -1395,15 +1414,8 @@ nav ul.show {
   padding-bottom: unset;
   padding-left: unset;
 }
-#coffee-btn {
-  padding-bottom: 20px;
-  padding-left: 20px;
-}
-a.kofi-button {
-  min-width: 100px !important;
-  padding: 0px 10px !important;
-  font-size: 13px !important;
-}
+
+
 
 .containerNav nav a:hover,
 .containerNav nav a:focus  {
@@ -1411,8 +1423,6 @@ a.kofi-button {
   text-decoration: none;
   font-size: 18px;
 }
-
-
 
 }
 
@@ -1515,4 +1525,14 @@ a.kofi-button {
     opacity: 1;
   }
  
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .main-container p {
+    font-size: 20px;
+  }
+  .form-text {
+    width: 60%;
+  }
 }

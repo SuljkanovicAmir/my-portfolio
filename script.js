@@ -52,7 +52,7 @@ let myVar;
 
 function myFunction() {
   
-  myVar = setTimeout(showPage, 1000);
+  myVar = setTimeout(showPage, 800);
 }
 
 function showPage() { 
@@ -68,14 +68,16 @@ function showPage() {
   minWidth: 200.00,
   scale: 1.00,
   scaleMobile: 1.00,
-  color: 0x595858,
+  color: 0xe8e2e2,
   backgroundColor: 0x0,
-  points: 15.00,
+  points: 17.00,
+  maxDistance: 12.00,
+  spacing: 14.00,
   showDots: false
   })
   AOS.init({
-    duration: 1000,
-    delay: 100,
+    duration: 1100,
+    delay: 200,
   });
 }
 
@@ -125,7 +127,7 @@ if (mainBody.classList.contains('dark')) {
            backgroundColor: 0xf0f0f0,
            spacing: 22.0,
            showDots: false,
-  }) } else {
+  })} else {
     VANTA.NET({
       el: ".firstScreen",
       mouseControls: true,
@@ -135,9 +137,11 @@ if (mainBody.classList.contains('dark')) {
     minWidth: 200.00,
     scale: 1.00,
     scaleMobile: 1.00,
-    color: 0x595858,
+    color: 0xe8e2e2,
     backgroundColor: 0x0,
-    points: 15.00,
+    points: 17.00,
+    maxDistance: 12.00,
+    spacing: 14.00,
     showDots: false
     })
   }
