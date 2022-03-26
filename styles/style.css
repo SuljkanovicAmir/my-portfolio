@@ -39,6 +39,44 @@ html {
 *:focus {
   outline: none;
 }
+.dark.main-body {
+  background: linear-gradient(to right bottom, rgb(255, 255, 255), rgb(242, 242, 242) 50%) !important;
+}
+.dark {
+  color: black !important;
+}
+.dark.socials,
+.dark.scroll-up {
+  filter: invert(0);
+}
+.dark.pText {
+  color: #d00202 !important;
+}
+.dark.main-container p {
+  color: black;
+}
+.dark.text {
+  color: black;
+}
+.dark.form-btn::before {
+  background-color: black;
+}
+.dark.form-btn span {
+  color: white;
+}
+.dark.firstBtn {
+  border: 1px solid black;
+}
+.dark.arrowBtn {
+  filter: invert(0);
+}
+.dark.firstBtn:hover {
+  background-color: black;
+  color: white !important;
+}
+.dark.firstBtn:hover .arrowBtn {
+  filter: invert(1);
+}
 
 .swal2-popup {
   border-radius: 6px !important;
@@ -107,8 +145,16 @@ html {
   color: black;
 }
 
-
-
+.darkmodeImg {
+  height: 32px;
+  filter: invert(1);
+}
+.dark.darkmodeImg {
+  filter: invert(0);
+}
+.darkmodeImg:hover {
+  cursor: pointer;
+}
 
 
 .main-body {
@@ -135,6 +181,7 @@ html {
   color: white;
   margin: 0;
   font-size: 40px;
+  height: 70px;
 }
 .containerNav nav {
     display: flex;
@@ -149,6 +196,7 @@ nav ul {
   color: white;
   font-weight: 600;
   font-family: "GTWalsheimPro-Light", sans-serif;
+  align-items: center;
 }
 
 .picture-header {
@@ -660,7 +708,8 @@ textarea.input100 {
 
 .up-arrow:hover,
 #scoll-up i:focus {
-  transform: scale(1.1);
+  transform: translateY(-5px);
+  transition: transform .3s ease-in-out;
 }
 
 
@@ -670,7 +719,7 @@ textarea.input100 {
 
 
 
-#loader {
+.loader {
   position: absolute;
   z-index: 1;
   width: 160px;
@@ -678,14 +727,16 @@ textarea.input100 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #f3f3f3;
+  border: 1px solid #000000;
   border-radius: 50%;
-  border-top: 2px solid #000000;
+  border-top: 2px solid #ffffff;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 1s linear infinite;
-  
 }
-
+.dark.loader {
+  border: 1px solid #ffffff;
+  border-top: 2px solid #000000;
+}
 
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
@@ -701,7 +752,10 @@ textarea.input100 {
     position: fixed;
     font-size: 40px;
     font-family: 'GTWalsheimPro-Light';
-    
+    color: white;
+}
+.dark.loader-text {
+  color: black;
 }
 
 .loader-wrapper {
@@ -713,10 +767,13 @@ textarea.input100 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: black;
   z-index: 150;
-  
 }
+.dark.loader-wrapper {
+  background-color: white;
+}
+
 
 .animate-bottom {
   position: relative;

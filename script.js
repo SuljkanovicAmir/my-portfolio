@@ -153,3 +153,64 @@ function showPage() {
   showDots: false
   })
 }
+
+
+function darkMode() {
+  let element = document.body;
+  element.classList.toggle("dark");
+  document.querySelector('.main-body').classList.toggle('dark')
+  document.querySelector('.firstScreen').classList.toggle('dark')
+  document.querySelector('.logoText').classList.toggle('dark')
+  document.querySelector('.main-section').classList.toggle('dark')
+  document.querySelector('.mytitle').classList.toggle('dark')
+  document.querySelector('.main-container').classList.toggle('dark')
+  document.querySelector('.aboutMe').classList.toggle('dark')
+  document.querySelectorAll('.text').forEach(function(field) {
+    field.classList.toggle('dark')
+    });
+    document.querySelectorAll('.myproject').forEach(function(field) {
+      field.classList.toggle('dark')
+      });
+  document.querySelector('.pText').classList.toggle('dark');
+  document.querySelector('.form-title').classList.toggle('dark');
+  document.querySelector('.socials').classList.toggle('dark');
+  document.querySelector('.scroll-up').classList.toggle('dark');
+  document.querySelector('.title2').classList.toggle('dark');
+  document.querySelector('.form-btn').classList.toggle('dark');
+  document.querySelector('.loader').classList.toggle('dark');
+  document.querySelector('.loader-text').classList.toggle('dark');
+  document.querySelector('.loader-wrapper').classList.toggle('dark');
+  document.querySelector('.darkmodeImg').classList.toggle('dark');
+  document.querySelector('.arrowBtn').classList.toggle('dark');
+  document.querySelector('.firstBtn').classList.toggle('dark');
+  let mainBody = document.querySelector('.main-body');
+if (mainBody.classList.contains('dark')) {
+  VANTA.NET({
+    el: ".firstScreen",
+    mouseControls: true,
+           touchControls: true,
+           gyroControls: false,
+           scale: 1.0,
+           scaleMobile: 1.0,
+           color: 0xcac6b5,
+           backgroundColor: 0xf0f0f0,
+           spacing: 22.0,
+           showDots: false,
+  }) } else {
+    VANTA.NET({
+      el: ".firstScreen",
+      mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x595858,
+    backgroundColor: 0x0,
+    points: 15.00,
+    showDots: false
+    })
+  }
+} 
+

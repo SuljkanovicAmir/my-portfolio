@@ -36,7 +36,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js"></script>
 </head>
 <body onload="myFunction()" >
-    <div  id="myDiv" class="main-body animate-bottom">
+    <div  id="myDiv" class="main-body animate-bottom ">
     <div id="firstDiv"  class="firstScreen ">
         <h1>Hello, I'm <span class="highlight">Amir Suljkanović.</span><br> I'm a front-end web developer.</h1>
         <a href="#containerNavs"><button class="firstBtn">View my work<img class="arrowBtn" src="./styles/uparrow.png"></button></a>
@@ -44,16 +44,17 @@
     <div id="containerNavs" class="containerNav">
         <div class="picture-header show">
             <a href="index.html">
-            <h1 class="logoText">as</h1></a>
+            <h1 class="logoText ">as</h1></a>
         </div>
         <div class="nav-bar">
         <nav>
-            <ul class="navigation">
+            <ul class="navigation ">
                 <li><img class="xbutton" src="styles/icons8-x-50.png"></li>
-                <li><a class="myproject" href="#firstDiv">Home</a></li>
-                <li><a class="myproject" href="#mainsection">About</a></li>
-                <li><a class="myproject" href="#projectsection">Projects</a></li>
-                <li><a class="myproject" href="#contactsection">Contact</a></li>
+                <li><a class="myproject " href="#firstDiv">Home</a></li>
+                <li><a class="myproject " href="#mainsection">About</a></li>
+                <li><a class="myproject " href="#projectsection">Projects</a></li>
+                <li><a class="myproject " href="#contactsection">Contact</a></li>
+                <li onclick="darkMode()"><img class="darkmodeImg" src="./styles/darkmode.svg"></li>
             </ul>
             <button class="burger-menu" id="burger-menu">
                 <img src="/styles/burger.png">
@@ -61,13 +62,13 @@
         </nav>
         </div>
     </div>
-    <div id="mainsection" class='main-section'>
-        <div id="mytitle">
+    <div id="mainsection" class='main-section '>
+        <div id="mytitle" class="mytitle ">
             <h1>about me.</h1>
           </div>
-        <div class='main-container'>
-            <h1 class="aboutMe">Hi, I'm Amir Suljkanović.</h1>
-            <p id="myp">
+        <div class='main-container '>
+            <h1 class="aboutMe ">Hi, I'm Amir Suljkanović.</h1>
+            <p id="myp" class="">
                 I am currently a final semester student at the Faculty of Crminalistics, 
                 Criminology and Security Studies at the University of Sarajevo - over
                 the past year I have decided to fulfill my interest in programming by
@@ -77,34 +78,34 @@
                 CSS and the basics of JavaScript, React and Python.</p>
         </div>
     </div>
-    <div id="projectsection" class="project-section">
-        <div class="title2"><h1>my projects.</h1></div>
+    <div id="projectsection" class="project-section ">
+        <div class="title2 "><h1>my projects.</h1></div>
         <div class="project-container">
             <div class="project">
                 <a id ="atag" href="https://github.com/SuljkanovicAmir/weatherapp" target="_blank" >
                 <img class="img" src="./styles/project-photos/1200x630wa.png"></a>
                 <div class="text">Weather App
-                    <p class="pText">CS50: Weather App project</p>
+                    <p class="pText ">CS50: Weather App project</p>
                 </div>
             </div>
             <div class="project">
                 <a id="atag" href="https://amir-etch-a-sketch.netlify.app/" target="_blank" >
                 <img class="img" src="styles/project-photos/restarurant.jpg"></a>
                 <div class="text">Restaurant
-                    <p class="pText">The Odin Project: Restaurant webpage</p>
+                    <p class="pText ">The Odin Project: Restaurant webpage</p>
                 </div>
             </div>
             <div class="project">
                 <a id="atag" target="_blank" href="https://amirlibrary.netlify.app/" >
                 <img class="img" src="./styles/project-photos/myLibrary.jpg"></a>
                 <div class="text">MyLibrary
-                    <p class="pText">The Odin Project: MyLibrary App</p>
+                    <p class="pText ">The Odin Project: MyLibrary App</p>
                 </div>
             </div>
         </div>
     </div>
-    <div id="contactsection" class="contact-section">
-        <div class="form-title">
+    <div id="contactsection" class="contact-section ">
+        <div class="form-title ">
             <h1 >contact me.</h1>
         </div>
         <div class="contact-container">
@@ -137,7 +138,7 @@
     </div>
     
     <footer class="footer">
-        <div class="socials">
+        <div class="socials ">
             <a href="https://www.linkedin.com/in/amir-suljkanovi%C4%87-843230209/" target="_blank"
               ><img
                 src="./styles/social-photos/linkd.svg"
@@ -153,7 +154,7 @@
           /></a>
           
         </div class="fade-in"> 
-            <i class="scroll-up fade-in" id="scroll-up"><img
+            <i class="scroll-up fade-in " id="scroll-up"><img
                 src="./styles/uparrow.png"
                 class="socicon up-arrow"
                 alt="scroll-up"
@@ -161,7 +162,7 @@
     </footer>
 </div>
     <div class="loader-wrapper">
-        <div id="loader"> </div>
+        <div class="loader"> </div>
         <h1 class="loader-text">as</h1>
     </div>
     
