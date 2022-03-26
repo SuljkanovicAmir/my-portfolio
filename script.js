@@ -183,6 +183,8 @@ function darkMode() {
   document.querySelector('.darkmodeImg').classList.toggle('dark');
   document.querySelector('.arrowBtn').classList.toggle('dark');
   document.querySelector('.firstBtn').classList.toggle('dark');
+  document.querySelector('.burger-menu').classList.toggle('dark');
+  document.querySelector('.xbutton').classList.toggle('dark');
   let mainBody = document.querySelector('.main-body');
 if (mainBody.classList.contains('dark')) {
   VANTA.NET({
