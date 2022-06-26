@@ -329,6 +329,7 @@ nav ul {
     align-self: center !important;
     font-family: 'Graphik';
     color: white;
+    transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 .text:hover {
   transform: translateX(30px);
